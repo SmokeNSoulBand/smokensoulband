@@ -1,237 +1,228 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2487.5">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px '.AppleSystemUIFontMonospaced'}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px '.AppleSystemUIFontMonospaced'; min-height: 15.0px}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smoke N Soul Band</title>
+</head>
+
+<body>
+  <h1>Smoke N Soul Band</h1>
+  <p>Live R&B and Soul across the 70s, 80s, and 90s.</p>
+  <p>Booking Austin, Houston, and beyond.</p>
+</body>
+</html>
+
+  <style>
+    :root{
+      --bg:#0b0b0f;
+      --panel:#12121a;
+      --text:#f6f2ea;
+      --muted:#c8c1b6;
+      --accent:#d1a85a; /* warm gold */
+      --accent2:#6b3fa0; /* deep plum */
+      --line:rgba(246,242,234,.12);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: radial-gradient(1200px 800px at 20% 10%, rgba(107,63,160,.22), transparent 55%),
+                  radial-gradient(1000px 600px at 80% 20%, rgba(209,168,90,.18), transparent 50%),
+                  var(--bg);
+      color:var(--text);
+      line-height:1.5;
+    }
+    a{color:inherit}
+    .wrap{max-width:1050px;margin:0 auto;padding:28px 18px 60px}
+    header{
+      display:flex;align-items:center;justify-content:space-between;gap:14px;
+      padding:14px 0 22px;border-bottom:1px solid var(--line);
+    }
+    .brand{
+      display:flex;align-items:baseline;gap:10px;letter-spacing:.08em;
+      text-transform:uppercase;
+    }
+    .brand .name{font-weight:800;font-size:18px}
+    .brand .tag{font-size:12px;color:var(--muted)}
+    nav{display:flex;gap:14px;font-size:13px;color:var(--muted)}
+    nav a{padding:8px 10px;border-radius:10px;text-decoration:none}
+    nav a:hover{background:rgba(246,242,234,.06);color:var(--text)}
+    .hero{
+      display:grid;grid-template-columns: 1.2fr .8fr;gap:18px;
+      padding:34px 0 20px;
+    }
+    .card{
+      background:rgba(18,18,26,.78);
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:20px;
+      backdrop-filter: blur(8px);
+    }
+    .headline{
+      font-size:42px;line-height:1.1;margin:0 0 10px;
+      letter-spacing:-.02em;
+    }
+    .sub{
+      color:var(--muted);
+      font-size:16px;
+      margin:0 0 16px;
+    }
+    .pillrow{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 0}
+    .pill{
+      font-size:12px;
+      color:var(--muted);
+      border:1px solid var(--line);
+      padding:8px 10px;
+      border-radius:999px;
+      background:rgba(0,0,0,.18);
+    }
+    .cta{
+      display:flex;flex-wrap:wrap;gap:10px;margin-top:18px
+    }
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;
+      padding:12px 14px;border-radius:12px;
+      text-decoration:none;font-weight:700;font-size:14px;
+      border:1px solid var(--line);
+      background:rgba(246,242,234,.06);
+    }
+    .btn.primary{
+      background:linear-gradient(135deg, rgba(209,168,90,.95), rgba(209,168,90,.55));
+      color:#1a1207;border:none;
+    }
+    .btn:hover{transform:translateY(-1px)}
+    .grid{
+      display:grid;grid-template-columns: repeat(3, 1fr);gap:14px;margin-top:14px;
+    }
+    h2{margin:0 0 10px;font-size:18px}
+    .small{color:var(--muted);font-size:13px;margin:0}
+    .list{margin:10px 0 0;padding:0;list-style:none}
+    .list li{padding:10px 0;border-top:1px solid var(--line)}
+    .list li:first-child{border-top:none}
+    footer{
+      margin-top:32px;padding-top:18px;border-top:1px solid var(--line);
+      display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
+      color:var(--muted);font-size:12px;
+    }
+    .logoMark{
+      width:52px;height:52px;border-radius:16px;
+      border:1px solid var(--line);
+      background:
+        radial-gradient(circle at 30% 30%, rgba(209,168,90,.35), transparent 55%),
+        radial-gradient(circle at 70% 60%, rgba(107,63,160,.28), transparent 55%),
+        rgba(0,0,0,.25);
+      display:flex;align-items:center;justify-content:center;
+      font-weight:900;color:rgba(246,242,234,.9);
+      letter-spacing:.06em;
+    }
+    @media (max-width: 860px){
+      .hero{grid-template-columns:1fr}
+      .headline{font-size:36px}
+      .grid{grid-template-columns:1fr}
+    }
   </style>
 </head>
+
 <body>
-<p class="p1">&lt;!doctype html&gt;</p>
-<p class="p1">&lt;html lang="en"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="utf-8" /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width,initial-scale=1" /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;Smoke N Soul Band&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="description" content="Smoke N Soul Band — live R&amp;B and soul across the 70s, 80s, and 90s. Booking Austin, Houston, and beyond." /&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>:root{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>--bg:#0b0b0f;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>--panel:#12121a;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>--text:#f6f2ea;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>--muted:#c8c1b6;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>--accent:#d1a85a; /* warm gold */</p>
-<p class="p1"><span class="Apple-converted-space">      </span>--accent2:#6b3fa0; /* deep plum */</p>
-<p class="p1"><span class="Apple-converted-space">      </span>--line:rgba(246,242,234,.12);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>*{box-sizing:border-box}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>body{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin:0;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: radial-gradient(1200px 800px at 20% 10%, rgba(107,63,160,.22), transparent 55%),</p>
-<p class="p1"><span class="Apple-converted-space">                  </span>radial-gradient(1000px 600px at 80% 20%, rgba(209,168,90,.18), transparent 50%),</p>
-<p class="p1"><span class="Apple-converted-space">                  </span>var(--bg);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color:var(--text);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>line-height:1.5;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>a{color:inherit}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.wrap{max-width:1050px;margin:0 auto;padding:28px 18px 60px}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>header{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display:flex;align-items:center;justify-content:space-between;gap:14px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding:14px 0 22px;border-bottom:1px solid var(--line);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.brand{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display:flex;align-items:baseline;gap:10px;letter-spacing:.08em;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-transform:uppercase;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.brand .name{font-weight:800;font-size:18px}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.brand .tag{font-size:12px;color:var(--muted)}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>nav{display:flex;gap:14px;font-size:13px;color:var(--muted)}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>nav a{padding:8px 10px;border-radius:10px;text-decoration:none}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>nav a:hover{background:rgba(246,242,234,.06);color:var(--text)}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.hero{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display:grid;grid-template-columns: 1.2fr .8fr;gap:18px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding:34px 0 20px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.card{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background:rgba(18,18,26,.78);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border:1px solid var(--line);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius:18px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding:20px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>backdrop-filter: blur(8px);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.headline{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size:42px;line-height:1.1;margin:0 0 10px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>letter-spacing:-.02em;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.sub{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color:var(--muted);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size:16px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin:0 0 16px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.pillrow{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 0}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.pill{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size:12px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color:var(--muted);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border:1px solid var(--line);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding:8px 10px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius:999px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background:rgba(0,0,0,.18);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.cta{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display:flex;flex-wrap:wrap;gap:10px;margin-top:18px</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.btn{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display:inline-flex;align-items:center;justify-content:center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding:12px 14px;border-radius:12px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-decoration:none;font-weight:700;font-size:14px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border:1px solid var(--line);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background:rgba(246,242,234,.06);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.btn.primary{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background:linear-gradient(135deg, rgba(209,168,90,.95), rgba(209,168,90,.55));</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color:#1a1207;border:none;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.btn:hover{transform:translateY(-1px)}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.grid{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display:grid;grid-template-columns: repeat(3, 1fr);gap:14px;margin-top:14px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>h2{margin:0 0 10px;font-size:18px}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.small{color:var(--muted);font-size:13px;margin:0}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.list{margin:10px 0 0;padding:0;list-style:none}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.list li{padding:10px 0;border-top:1px solid var(--line)}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.list li:first-child{border-top:none}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>footer{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-top:32px;padding-top:18px;border-top:1px solid var(--line);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color:var(--muted);font-size:12px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.logoMark{</p>
-<p class="p1"><span class="Apple-converted-space">      </span>width:52px;height:52px;border-radius:16px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border:1px solid var(--line);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background:</p>
-<p class="p1"><span class="Apple-converted-space">        </span>radial-gradient(circle at 30% 30%, rgba(209,168,90,.35), transparent 55%),</p>
-<p class="p1"><span class="Apple-converted-space">        </span>radial-gradient(circle at 70% 60%, rgba(107,63,160,.28), transparent 55%),</p>
-<p class="p1"><span class="Apple-converted-space">        </span>rgba(0,0,0,.25);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display:flex;align-items:center;justify-content:center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-weight:900;color:rgba(246,242,234,.9);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>letter-spacing:.06em;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>@media (max-width: 860px){</p>
-<p class="p1"><span class="Apple-converted-space">      </span>.hero{grid-template-columns:1fr}</p>
-<p class="p1"><span class="Apple-converted-space">      </span>.headline{font-size:36px}</p>
-<p class="p1"><span class="Apple-converted-space">      </span>.grid{grid-template-columns:1fr}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="wrap"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;header&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="brand"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="logoMark"&gt;SNS&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="name"&gt;Smoke N Soul Band&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="tag"&gt;Live R&amp;B • Soul • Groove | Austin • Houston&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;nav&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="#about"&gt;About&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="#shows"&gt;Shows&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="#booking"&gt;Booking&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/nav&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/header&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;section class="hero"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h1 class="headline"&gt;Austin’s newest R&amp;B band — built on soul.&lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="sub"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>Smoke N Soul is a 9-piece live ensemble delivering timeless R&amp;B and soul across the 70s, 80s, and 90s —</p>
-<p class="p1"><span class="Apple-converted-space">          </span>with a modern edge, rich vocals, horns, and a pocket that stays locked.</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="cta"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;a class="btn primary" href="#booking"&gt;Book Smoke N Soul&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;a class="btn" href="#shows"&gt;See upcoming shows&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="pillrow"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;span class="pill"&gt;90–120 minute featured sets&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;span class="pill"&gt;Flexible set configurations&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;span class="pill"&gt;Private events + venues&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;span class="pill"&gt;Travel available (TX)&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="card" id="about"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2&gt;What we do&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="small"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>Our repertoire is actively expanding and curated to match each room — from slow jams to dancefloor classics.</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;ul class="list"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;li&gt;&lt;strong&gt;Sound:&lt;/strong&gt; R&amp;B • Soul • Groove-forward classics&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;li&gt;&lt;strong&gt;Eras:&lt;/strong&gt; 70s • 80s • 90s (plus modern favorites)&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;li&gt;&lt;strong&gt;Format:&lt;/strong&gt; Full rhythm section + horns + multiple vocalists&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;section class="grid"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="card" id="shows"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2&gt;Shows&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="small"&gt;Dates will be posted here as we confirm bookings (after February).&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;ul class="list"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;li&gt;&lt;strong&gt;Coming soon:&lt;/strong&gt; Austin&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;li&gt;&lt;strong&gt;Coming soon:&lt;/strong&gt; Houston&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;li&gt;&lt;strong&gt;Coming soon:&lt;/strong&gt; San Antonio&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2&gt;What to expect&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="small"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>A polished live show that keeps guests engaged — perfect for nightlife, lounges, and private events.</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;ul class="list"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;li&gt;Set pacing + smooth transitions&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;li&gt;Audience interaction without cheesiness&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;li&gt;Professional booking + clear communication&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="card" id="booking"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2&gt;Booking&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="small"&gt;For availability, rates, and technical details:&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="cta"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;!-- Replace with your band email --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;a class="btn primary" href="mailto:smokensoulband@gmail.com?subject=Booking%20Inquiry%20-%20Smoke%20N%20Soul"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>Email Booking</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;!-- Replace the href with your Instagram URL --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;a class="btn" href="https://instagram.com/" target="_blank" rel="noreferrer"&gt;Instagram&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="small" style="margin-top:12px;"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>Please include: date, venue/event address, performance window, and preferred set length.</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;footer&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div&gt;© &lt;span id="y"&gt;&lt;/span&gt; Smoke N Soul Band&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div&gt;Booking: smokensoulband@gmail.com&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/footer&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>document.getElementById('y').textContent = new Date().getFullYear();</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/script&gt;</p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logoMark">SNS</div>
+        <div>
+          <div class="name">Smoke N Soul Band</div>
+          <div class="tag">Live R&B • Soul • Groove | Austin • Houston</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#shows">Shows</a>
+        <a href="#booking">Booking</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="card">
+        <h1 class="headline">Austin’s newest R&B band — built on soul.</h1>
+        <p class="sub">
+          Smoke N Soul is a 9-piece live ensemble delivering timeless R&B and soul across the 70s, 80s, and 90s —
+          with a modern edge, rich vocals, horns, and a pocket that stays locked.
+        </p>
+
+        <div class="cta">
+          <a class="btn primary" href="#booking">Book Smoke N Soul</a>
+          <a class="btn" href="#shows">See upcoming shows</a>
+        </div>
+
+        <div class="pillrow">
+          <span class="pill">90–120 minute featured sets</span>
+          <span class="pill">Flexible set configurations</span>
+          <span class="pill">Private events + venues</span>
+          <span class="pill">Travel available (TX)</span>
+        </div>
+      </div>
+
+      <div class="card" id="about">
+        <h2>What we do</h2>
+        <p class="small">
+          Our repertoire is actively expanding and curated to match each room — from slow jams to dancefloor classics.
+        </p>
+        <ul class="list">
+          <li><strong>Sound:</strong> R&B • Soul • Groove-forward classics</li>
+          <li><strong>Eras:</strong> 70s • 80s • 90s (plus modern favorites)</li>
+          <li><strong>Format:</strong> Full rhythm section + horns + multiple vocalists</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="card" id="shows">
+        <h2>Shows</h2>
+        <p class="small">Dates will be posted here as we confirm bookings (after February).</p>
+        <ul class="list">
+          <li><strong>Coming soon:</strong> Austin</li>
+          <li><strong>Coming soon:</strong> Houston</li>
+          <li><strong>Coming soon:</strong> San Antonio</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>What to expect</h2>
+        <p class="small">
+          A polished live show that keeps guests engaged — perfect for nightlife, lounges, and private events.
+        </p>
+        <ul class="list">
+          <li>Set pacing + smooth transitions</li>
+          <li>Audience interaction without cheesiness</li>
+          <li>Professional booking + clear communication</li>
+        </ul>
+      </div>
+
+      <div class="card" id="booking">
+        <h2>Booking</h2>
+        <p class="small">For availability, rates, and technical details:</p>
+        <div class="cta">
+          <!-- Replace with your band email -->
+          <a class="btn primary" href="mailto:smokensoulband@gmail.com?subject=Booking%20Inquiry%20-%20Smoke%20N%20Soul">
+            Email Booking
+          </a>
+          <!-- Replace the href with your Instagram URL -->
+          <a class="btn" href="https://instagram.com/" target="_blank" rel="noreferrer">Instagram</a>
+        </div>
+        <p class="small" style="margin-top:12px;">
+          Please include: date, venue/event address, performance window, and preferred set length.
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <div>© <span id="y"></span> Smoke N Soul Band</div>
+      <div>Booking: smokensoulband@gmail.com</div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
