@@ -4,11 +4,309 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Smoke N Soul Band</title>
+
+  <style>
+    :root {
+      --bg: #070709;
+      --panel: rgba(18, 18, 26, 0.75);
+      --text: #f6f2ea;
+      --muted: #bdb7ad;
+      --gold: #d1a85a;
+      --border: rgba(255, 255, 255, 0.08);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 30px;
+    }
+
+    /* --- NAV --- */
+    nav {
+      width: 100%;
+      max-width: 1100px;
+      margin: 0 auto 25px auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav .brand {
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-size: 14px;
+      color: var(--gold);
+    }
+
+    nav ul {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: var(--text);
+      font-size: 14px;
+      opacity: 0.85;
+      transition: 0.2s ease;
+    }
+
+    nav ul li a:hover {
+      opacity: 1;
+      color: var(--gold);
+    }
+
+    /* --- BANNER SECTION --- */
+    .hero-banner {
+      width: 100%;
+      max-width: 1100px;
+      margin: 0 auto 30px auto;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0px 0px 50px rgba(209, 168, 90, 0.12);
+      border: 1px solid var(--border);
+    }
+
+    .hero-banner img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* --- MAIN LAYOUT --- */
+    .container {
+      width: 100%;
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 20px;
+      backdrop-filter: blur(8px);
+    }
+
+    .card h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: var(--text);
+    }
+
+    .card h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: var(--gold);
+    }
+
+    .card p {
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .pill-row {
+      margin-top: 15px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .pill {
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      font-size: 12px;
+      color: var(--text);
+      opacity: 0.9;
+    }
+
+    /* --- BUTTONS --- */
+    .btn-row {
+      margin-top: 18px;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 10px 14px;
+      border-radius: 12px;
+      border: none;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 13px;
+      transition: 0.2s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn-primary {
+      background: var(--gold);
+      color: black;
+    }
+
+    .btn-primary:hover {
+      filter: brightness(1.05);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--text);
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--gold);
+      color: var(--gold);
+    }
+
+    /* --- LOWER GRID --- */
+    .grid-lower {
+      width: 100%;
+      max-width: 1100px;
+      margin: 20px auto 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 20px;
+    }
+
+    /* --- FOOTER --- */
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 12px;
+      color: var(--muted);
+      opacity: 0.6;
+    }
+
+    /* --- RESPONSIVE --- */
+    @media (max-width: 900px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+
+      .grid-lower {
+        grid-template-columns: 1fr;
+      }
+
+      body {
+        padding: 18px;
+      }
+    }
+  </style>
 </head>
 
 <body>
-  <h1>Smoke N Soul Band</h1>
-  <p>Live R&B and Soul across the 70s, 80s, and 90s.</p>
-  <p>Booking Austin, Houston, and beyond.</p>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="brand">Smoke N Soul Band</div>
+
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#shows">Shows</a></li>
+      <li><a href="#booking">Booking</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO BANNER -->
+  <section class="hero-banner">
+    <img src="images/A_digital_promotional_banner_for_Smoke_N_Soul_Band.png" alt="Smoke N Soul Band Banner">
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <section class="container">
+
+    <!-- LEFT MAIN CARD -->
+    <div class="card">
+      <h2>Austin’s newest R&B band — built on soul.</h2>
+
+      <p>
+        Smoke N Soul is a 9-piece live ensemble delivering timeless R&B and soul across the 70s, 80s, and 90s —
+        with a modern edge, rich vocals, horns, and a pocket that stays locked.
+      </p>
+
+      <div class="btn-row">
+        <a class="btn btn-primary" href="mailto:smokensoulband@gmail.com">Book Smoke N Soul</a>
+        <a class="btn btn-secondary" href="#shows">See upcoming shows</a>
+      </div>
+
+      <div class="pill-row">
+        <div class="pill">90–120 minute featured sets</div>
+        <div class="pill">Flexible set configurations</div>
+        <div class="pill">Private events + venues</div>
+        <div class="pill">Travel available (TX)</div>
+      </div>
+    </div>
+
+    <!-- RIGHT CARD -->
+    <div class="card">
+      <h3>What we do</h3>
+
+      <p><strong>Sound:</strong> R&B • Soul • Groove-forward classics</p>
+      <p><strong>Eras:</strong> 70s • 80s • 90s (plus modern favorites)</p>
+      <p><strong>Format:</strong> Full rhythm section + horns + multiple vocalists</p>
+
+      <br>
+
+      <p>
+        Our repertoire is actively expanding and curated to match each room —
+        from slow jams to dancefloor classics.
+      </p>
+    </div>
+
+  </section>
+
+  <!-- LOWER GRID -->
+  <section class="grid-lower">
+
+    <div class="card" id="shows">
+      <h3>Shows</h3>
+      <p>Dates will be posted here as we confirm bookings (after February).</p>
+      <br>
+      <p><strong>Coming soon:</strong> Austin + Houston</p>
+    </div>
+
+    <div class="card" id="about">
+      <h3>What to expect</h3>
+      <p>A polished live show that keeps guests engaged — perfect for nightlife, lounges, and private events.</p>
+      <br>
+      <p><strong>Set pacing:</strong> smooth transitions + crowd energy control.</p>
+    </div>
+
+    <div class="card" id="booking">
+      <h3>Booking</h3>
+      <p>For availability, rates, and technical details:</p>
+
+      <div class="btn-row">
+        <a class="btn btn-primary" href="mailto:smokensoulband@gmail.com">Email Booking</a>
+        <a class="btn btn-secondary" href="https://instagram.com/" target="_blank">Instagram</a>
+      </div>
+
+      <br>
+
+      <p>Please include: date, venue/event address, set length, and sound requirements.</p>
+    </div>
+
+  </section>
+
+  <footer>
+    © Smoke N Soul Band — Austin • Houston • Texas
+  </footer>
+
 </body>
 </html>
