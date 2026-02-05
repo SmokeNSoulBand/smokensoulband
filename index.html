@@ -1,312 +1,312 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Smoke N Soul Band</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Smoke N Soul Band — Live R&B • Soul • Groove</title>
+  <meta name="description" content="Smoke N Soul Band — a 9-piece live R&B & soul band covering the 70s, 80s, 90s and beyond. Booking Austin & Houston." />
 
   <style>
-    :root {
-      --bg: #070709;
-      --panel: rgba(18, 18, 26, 0.75);
+    :root{
+      --bg: #0b0b0f;
+      --panel: rgba(18,18,26,0.78);
+      --panel-2: rgba(18,18,26,0.60);
       --text: #f6f2ea;
       --muted: #bdb7ad;
       --gold: #d1a85a;
-      --border: rgba(255, 255, 255, 0.08);
+      --border: rgba(255,255,255,0.10);
+      --shadow: 0 18px 60px rgba(0,0,0,0.55);
+      --glow: 0 0 48px rgba(209,168,90,0.18);
     }
 
-    * {
+    *{ box-sizing: border-box; }
+    html, body { height: 100%; }
+    body{
       margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: var(--bg);
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
       color: var(--text);
+      background:
+        radial-gradient(1200px 600px at 30% 10%, rgba(125, 70, 190, 0.14), transparent 55%),
+        radial-gradient(900px 500px at 80% 30%, rgba(209, 168, 90, 0.10), transparent 60%),
+        radial-gradient(900px 600px at 40% 90%, rgba(40, 140, 220, 0.06), transparent 55%),
+        var(--bg);
       line-height: 1.6;
-      padding: 30px;
+      padding: 28px 16px 60px;
     }
 
-    /* --- NAV --- */
-    nav {
+    a{ color: var(--text); text-decoration: none; }
+    a:hover{ text-decoration: underline; }
+
+    .wrap{
       width: 100%;
       max-width: 1100px;
-      margin: 0 auto 25px auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      margin: 0 auto;
     }
 
-    nav .brand {
-      font-weight: 700;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      font-size: 14px;
-      color: var(--gold);
+    /* Top micro copy (optional) */
+    .kicker{
+      font-size: 0.95rem;
+      color: var(--muted);
+      margin: 0 0 14px;
     }
+    .kicker strong{ color: var(--text); font-weight: 650; }
 
-    nav ul {
-      display: flex;
-      gap: 20px;
-      list-style: none;
+    /* NAV */
+    .nav{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap: 16px;
+      margin: 18px 0 18px;
     }
-
-    nav ul li a {
-      text-decoration: none;
-      color: var(--text);
-      font-size: 14px;
-      opacity: 0.85;
-      transition: 0.2s ease;
+    .nav .brandline{
+      display:flex;
+      align-items:center;
+      gap: 10px;
+      color: var(--muted);
+      font-size: 0.92rem;
+      letter-spacing: 0.02em;
     }
-
-    nav ul li a:hover {
-      opacity: 1;
-      color: var(--gold);
+    .nav .links{
+      display:flex;
+      gap: 18px;
+      font-size: 0.95rem;
+      color: var(--muted);
     }
+    .nav .links a{ color: var(--muted); }
+    .nav .links a:hover{ color: var(--text); text-decoration:none; }
 
-    /* --- BANNER SECTION --- */
-    .hero-banner {
+    /* HERO BANNER */
+    .hero-banner{
       width: 100%;
-      max-width: 1100px;
-      margin: 0 auto 30px auto;
       border-radius: 18px;
       overflow: hidden;
-      box-shadow: 0px 0px 50px rgba(209, 168, 90, 0.12);
       border: 1px solid var(--border);
+      box-shadow: var(--shadow), var(--glow);
+      background: rgba(0,0,0,0.25);
+      margin: 0 0 18px;
     }
-
-    .hero-banner img {
+    .hero-banner img{
       width: 100%;
       height: auto;
       display: block;
     }
 
-    /* --- MAIN LAYOUT --- */
-    .container {
-      width: 100%;
-      max-width: 1100px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-      gap: 20px;
+    /* Layout */
+    .grid{
+      display:grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 18px;
+      margin-top: 14px;
+    }
+    @media (max-width: 900px){
+      .grid{ grid-template-columns: 1fr; }
+      .nav{ flex-direction: column; align-items:flex-start; }
+      .nav .links{ flex-wrap: wrap; }
     }
 
-    .card {
+    .card{
       background: var(--panel);
       border: 1px solid var(--border);
       border-radius: 18px;
-      padding: 20px;
-      backdrop-filter: blur(8px);
+      padding: 18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.30);
+      backdrop-filter: blur(10px);
     }
+    .card h2, .card h3{
+      margin: 0 0 8px;
+      line-height: 1.2;
+    }
+    .card p{ margin: 0 0 12px; color: var(--muted); }
+    .card p:last-child{ margin-bottom: 0; }
 
-    .card h2 {
-      font-size: 24px;
+    .headline{
+      font-size: clamp(1.6rem, 3vw, 2.25rem);
+      font-weight: 750;
+      letter-spacing: -0.02em;
       margin-bottom: 10px;
-      color: var(--text);
     }
-
-    .card h3 {
-      font-size: 18px;
-      margin-bottom: 10px;
-      color: var(--gold);
-    }
-
-    .card p {
-      font-size: 14px;
+    .subline{
       color: var(--muted);
+      margin-bottom: 14px;
     }
 
-    .pill-row {
-      margin-top: 15px;
-      display: flex;
+    .pillrow{
+      display:flex;
       flex-wrap: wrap;
       gap: 10px;
+      margin-top: 12px;
     }
-
-    .pill {
-      padding: 8px 12px;
-      border-radius: 999px;
+    .pill{
       border: 1px solid var(--border);
-      font-size: 12px;
-      color: var(--text);
-      opacity: 0.9;
-    }
-
-    /* --- BUTTONS --- */
-    .btn-row {
-      margin-top: 18px;
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-
-    .btn {
-      padding: 10px 14px;
-      border-radius: 12px;
-      border: none;
-      cursor: pointer;
-      font-weight: 600;
-      font-size: 13px;
-      transition: 0.2s ease;
-      text-decoration: none;
-      display: inline-block;
-    }
-
-    .btn-primary {
-      background: var(--gold);
-      color: black;
-    }
-
-    .btn-primary:hover {
-      filter: brightness(1.05);
-    }
-
-    .btn-secondary {
-      background: transparent;
-      border: 1px solid var(--border);
-      color: var(--text);
-    }
-
-    .btn-secondary:hover {
-      border-color: var(--gold);
-      color: var(--gold);
-    }
-
-    /* --- LOWER GRID --- */
-    .grid-lower {
-      width: 100%;
-      max-width: 1100px;
-      margin: 20px auto 0 auto;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 20px;
-    }
-
-    /* --- FOOTER --- */
-    footer {
-      text-align: center;
-      margin-top: 40px;
-      font-size: 12px;
+      background: rgba(0,0,0,0.18);
       color: var(--muted);
-      opacity: 0.6;
+      padding: 8px 10px;
+      border-radius: 999px;
+      font-size: 0.85rem;
     }
 
-    /* --- RESPONSIVE --- */
-    @media (max-width: 900px) {
-      .container {
-        grid-template-columns: 1fr;
-      }
-
-      .grid-lower {
-        grid-template-columns: 1fr;
-      }
-
-      body {
-        padding: 18px;
-      }
+    .btnrow{
+      display:flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 14px;
     }
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap: 8px;
+      padding: 10px 12px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: rgba(0,0,0,0.22);
+      color: var(--text);
+      font-weight: 650;
+      font-size: 0.95rem;
+      text-decoration:none;
+    }
+    .btn:hover{ text-decoration:none; border-color: rgba(209,168,90,0.40); box-shadow: 0 0 0 3px rgba(209,168,90,0.08); }
+    .btn.gold{
+      background: linear-gradient(180deg, rgba(209,168,90,0.22), rgba(0,0,0,0.22));
+      border-color: rgba(209,168,90,0.35);
+    }
+
+    .mini{
+      background: var(--panel-2);
+    }
+
+    .label{
+      color: var(--muted);
+      font-size: 0.86rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 10px;
+    }
+
+    .list{
+      margin: 0;
+      padding-left: 18px;
+      color: var(--muted);
+    }
+    .list li{ margin: 6px 0; }
+
+    footer{
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 0.9rem;
+      text-align:center;
+    }
+    footer a{ color: var(--muted); }
   </style>
 </head>
 
 <body>
+  <div class="wrap">
 
-  <!-- NAVIGATION -->
-  <nav>
-    <div class="brand">Smoke N Soul Band</div>
+    <p class="kicker">
+      <strong>Live R&B & Soul</strong> across the 70s, 80s, and 90s — with modern favorites.
+      <br/>Booking Austin, Houston, and beyond.
+    </p>
 
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#shows">Shows</a></li>
-      <li><a href="#booking">Booking</a></li>
-    </ul>
-  </nav>
+    <!-- HERO BANNER (make sure your file path matches exactly) -->
+    <div class="hero-banner">
+      <img src="images/banner.png" alt="Smoke N Soul Band — banner" />
+    </div>
 
-  <!-- HERO BANNER -->
-  <section class="hero-banner">
-  <img src="images/banner.png" alt="Smoke N Soul Band Banner" class="hero-img">
-</section>
-
-  <!-- MAIN CONTENT -->
-  <section class="container">
-
-    <!-- LEFT MAIN CARD -->
-    <div class="card">
-      <h2>Austin’s newest R&B band — built on soul.</h2>
-
-      <p>
-        Smoke N Soul is a 9-piece live ensemble delivering timeless R&B and soul across the 70s, 80s, and 90s —
-        with a modern edge, rich vocals, horns, and a pocket that stays locked.
-      </p>
-
-      <div class="btn-row">
-        <a class="btn btn-primary" href="mailto:smokensoulband@gmail.com">Book Smoke N Soul</a>
-        <a class="btn btn-secondary" href="#shows">See upcoming shows</a>
+    <div class="nav">
+      <div class="brandline">
+        <span style="color:var(--gold); font-weight:800;">SNS</span>
+        <span>Smoke N Soul Band • Live R&B • Soul • Groove • Austin • Houston</span>
       </div>
-
-      <div class="pill-row">
-        <div class="pill">90–120 minute featured sets</div>
-        <div class="pill">Flexible set configurations</div>
-        <div class="pill">Private events + venues</div>
-        <div class="pill">Travel available (TX)</div>
+      <div class="links">
+        <a href="#about">About</a>
+        <a href="#shows">Shows</a>
+        <a href="#booking">Booking</a>
       </div>
     </div>
 
-    <!-- RIGHT CARD -->
-    <div class="card">
-      <h3>What we do</h3>
+    <div class="grid">
+      <!-- LEFT / MAIN -->
+      <section class="card" id="about">
+        <h1 class="headline">Austin’s newest R&amp;B band — built on soul.</h1>
+        <p class="subline">
+          Smoke N Soul is a 9-piece live ensemble delivering timeless R&amp;B and soul across the 70s, 80s, and 90s —
+          with rich vocals, tight rhythm section, horns, and a pocket that stays locked.
+        </p>
 
-      <p><strong>Sound:</strong> R&B • Soul • Groove-forward classics</p>
-      <p><strong>Eras:</strong> 70s • 80s • 90s (plus modern favorites)</p>
-      <p><strong>Format:</strong> Full rhythm section + horns + multiple vocalists</p>
+        <div class="btnrow">
+          <a class="btn gold" href="#booking">Book Smoke N Soul</a>
+          <a class="btn" href="#shows">See upcoming shows</a>
+        </div>
 
-      <br>
+        <div class="pillrow">
+          <span class="pill">90–120 min featured sets</span>
+          <span class="pill">Flexible set configurations</span>
+          <span class="pill">Private events + venues</span>
+          <span class="pill">Travel available (TX)</span>
+        </div>
+      </section>
 
-      <p>
-        Our repertoire is actively expanding and curated to match each room —
-        from slow jams to dancefloor classics.
-      </p>
+      <!-- RIGHT / WHAT WE DO -->
+      <aside class="card mini">
+        <div class="label">What we do</div>
+        <p>
+          Our repertoire is actively expanding each month — from slow jams to dancefloor classics.
+        </p>
+        <ul class="list">
+          <li><strong style="color:var(--text);">Sound:</strong> R&amp;B • Soul • Groove-forward classics</li>
+          <li><strong style="color:var(--text);">Eras:</strong> 70s • 80s • 90s (plus modern favorites)</li>
+          <li><strong style="color:var(--text);">Format:</strong> Full rhythm section + horns + multiple vocalists</li>
+        </ul>
+      </aside>
+
+      <!-- SHOWS -->
+      <section class="card mini" id="shows">
+        <div class="label">Shows</div>
+        <p>
+          Dates will be posted here as we confirm bookings (booking after February).
+        </p>
+        <p style="margin:0;">
+          <strong style="color:var(--text);">Coming soon:</strong> Austin &amp; Houston
+        </p>
+      </section>
+
+      <!-- BOOKING -->
+      <section class="card mini" id="booking">
+        <div class="label">Booking</div>
+        <p>
+          For availability, rates, and technical details:
+        </p>
+
+        <div class="btnrow">
+          <!-- Update email if needed -->
+          <a class="btn gold" href="mailto:smokensoulband@gmail.com?subject=Booking%20Inquiry%20—%20Smoke%20N%20Soul">Email Booking</a>
+
+          <!-- Update your IG handle link when ready -->
+          <a class="btn" href="#" onclick="alert('Add your Instagram link here when ready!'); return false;">Instagram</a>
+        </div>
+
+        <p style="margin-top:12px;">
+          Please include: date, venue/event address, set length (90/120), load-in time, and whether in-house sound is provided.
+        </p>
+
+        <p style="margin:0;">
+          <strong style="color:var(--text);">Sound/Engineering:</strong> Tell us what system you have (PA, mics, monitors) and whether you provide an engineer.
+        </p>
+      </section>
     </div>
 
-  </section>
+    <footer>
+      © <span id="year"></span> Smoke N Soul Band • Austin • Houston •
+      <a href="mailto:smokensoulband@gmail.com">smokensoulband@gmail.com</a>
+    </footer>
 
-  <!-- LOWER GRID -->
-  <section class="grid-lower">
+  </div>
 
-    <div class="card" id="shows">
-      <h3>Shows</h3>
-      <p>Dates will be posted here as we confirm bookings (after February).</p>
-      <br>
-      <p><strong>Coming soon:</strong> Austin + Houston</p>
-    </div>
-
-    <div class="card" id="about">
-      <h3>What to expect</h3>
-      <p>A polished live show that keeps guests engaged — perfect for nightlife, lounges, and private events.</p>
-      <br>
-      <p><strong>Set pacing:</strong> smooth transitions + crowd energy control.</p>
-    </div>
-
-    <div class="card" id="booking">
-      <h3>Booking</h3>
-      <p>For availability, rates, and technical details:</p>
-
-      <div class="btn-row">
-        <a class="btn btn-primary" href="mailto:smokensoulband@gmail.com">Email Booking</a>
-        <a class="btn btn-secondary" href="https://instagram.com/" target="_blank">Instagram</a>
-      </div>
-
-      <br>
-
-      <p>Please include: date, venue/event address, set length, and sound requirements.</p>
-    </div>
-
-  </section>
-
-  <footer>
-    © Smoke N Soul Band — Austin • Houston • Texas
-  </footer>
-
+  <script>
+    // auto year
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
